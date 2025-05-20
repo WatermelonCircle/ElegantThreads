@@ -285,10 +285,10 @@ img {
 
 .about-image-small {
     float: right;
-    width: 150px;
-    height: 150px;
-    margin: 0 0 15px 20px;
-    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 20px 25px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
 }
@@ -613,6 +613,14 @@ img {
     .carousel-category-indicator {
         font-size: 0.9rem;
         padding: 6px 15px;
+    }
+    
+    .about-image-small {
+        float: none;
+        width: 240px;
+        height: 240px;
+        margin: 0 auto 30px;
+        display: block;
     }
 }
 
