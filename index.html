@@ -76,265 +76,221 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Tailoring Services</h2>
-                <div class="underline"></div>
-                <p>Craftsmanship and precision for every garment</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="img/womens-tailoring.jpg" alt="Women's Custom Tailoring">
-                    </div>
-                    <h3>Women's Custom Tailoring</h3>
-                    <p>Bespoke dresses and outfits tailored uniquely for your style.</p>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="img/mens-tailoring.jpg" alt="Men's Custom Tailoring">
-                    </div>
-                    <h3>Men's Custom Tailoring</h3>
-                    <p>Perfectly tailored suits and casual wear designed exclusively for you.</p>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="img/downsizing.jpg" alt="Garment Downsizing">
-                    </div>
-                    <h3>Garment Downsizing</h3>
-                    <p>Expertly resizing your cherished garments to fit like new.</p>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="img/trimming-hemming.jpg" alt="Trimming & Hemming">
-                    </div>
-                    <h3>Trimming & Hemming</h3>
-                    <p>Precision adjustments for flawless fits and stylish comfort.</p>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="img/zipper-button.jpg" alt="Zipper & Button Installation">
-                    </div>
-                    <h3>Zipper & Button Installation</h3>
-                    <p>Quality repair and enhancements to restore your favorite clothing.</p>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Carousel Section -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section-padding">
         <div class="container">
             <div class="section-header">
-                <h2>Our Tailoring Portfolio</h2>
+                <h2>Our Portfolio</h2>
                 <div class="underline"></div>
-                <p>Experience our craftsmanship through our work portfolio</p>
+                <p>Showcasing our finest tailoring work and craftsmanship</p>
             </div>
-            <div class="portfolio-carousel">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <!-- Downsizing Images -->
-                        <div class="carousel-slide" data-category="Garment Downsizing">
-                            <img src="img/downsizing/downsizing-1.jpg" alt="Garment Downsizing Example 1">
-                            <div class="slide-caption">
-                                <h4>Garment Downsizing</h4>
-                                <p>Expert resizing for a perfect fit</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Garment Downsizing">
-                            <img src="img/downsizing/downsizing-2.jpg" alt="Garment Downsizing Example 2">
-                            <div class="slide-caption">
-                                <h4>Garment Downsizing</h4>
-                                <p>Before and after transformations</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Garment Downsizing">
-                            <img src="img/downsizing/downsizing-3.jpg" alt="Garment Downsizing Example 3">
-                            <div class="slide-caption">
-                                <h4>Garment Downsizing</h4>
-                                <p>Precision alterations for the perfect fit</p>
-                            </div>
-                        </div>
+            
+            <!-- Portfolio Navigation -->
+            <div class="portfolio-nav">
+                <button class="portfolio-nav-btn active" data-category="all">All Work</button>
+                <button class="portfolio-nav-btn" data-category="trimming-hemming">Trimming & Hemming</button>
+                <button class="portfolio-nav-btn" data-category="womens-tailoring">Women's Tailoring</button>
+                <button class="portfolio-nav-btn" data-category="mens-tailoring">Men's Tailoring</button>
+                <button class="portfolio-nav-btn" data-category="downsizing">Downsizing</button>
+                <button class="portfolio-nav-btn" data-category="zipper-button">Zipper & Button</button>
+            </div>
 
-                        <!-- Men's Tailoring Images -->
-                        <div class="carousel-slide" data-category="Men's Custom Tailoring">
-                            <img src="img/mens-tailoring/mens-tailoring-1.jpg" alt="Men's Custom Tailoring Example 1">
-                            <div class="slide-caption">
-                                <h4>Men's Custom Tailoring</h4>
-                                <p>Precision and elegance in every suit</p>
-                            </div>
+            <!-- Trimming & Hemming Portfolio -->
+            <div class="portfolio-category" id="trimming-hemming">
+                <h3>Trimming & Hemming</h3>
+                <p>Precision adjustments for flawless fits and stylish comfort</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/trimming-hemming/IMG_4186.JPG" alt="Trimming & Hemming Work 1">
+                        <div class="portfolio-overlay">
+                            <h4>Professional Hemming</h4>
+                            <p>Perfect length adjustments</p>
                         </div>
-                        <div class="carousel-slide" data-category="Men's Custom Tailoring">
-                            <img src="img/mens-tailoring/mens-tailoring-2.jpg" alt="Men's Custom Tailoring Example 2">
-                            <div class="slide-caption">
-                                <h4>Men's Custom Tailoring</h4>
-                                <p>Bespoke suits crafted to perfection</p>
-                            </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/trimming-hemming/IMG_1671.WEBP" alt="Trimming & Hemming Work 2">
+                        <div class="portfolio-overlay">
+                            <h4>Precise Trimming</h4>
+                            <p>Clean and accurate cuts</p>
                         </div>
-                        <div class="carousel-slide" data-category="Men's Custom Tailoring">
-                            <img src="img/mens-tailoring/mens-tailoring-3.jpg" alt="Men's Custom Tailoring Example 3">
-                            <div class="slide-caption">
-                                <h4>Men's Custom Tailoring</h4>
-                                <p>Custom details for a distinguished look</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Men's Custom Tailoring">
-                            <img src="img/mens-tailoring/mens-tailoring-4.jpg" alt="Men's Custom Tailoring Example 4">
-                            <div class="slide-caption">
-                                <h4>Men's Custom Tailoring</h4>
-                                <p>Professional tailoring for formal occasions</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Men's Custom Tailoring">
-                            <img src="img/mens-tailoring/mens-tailoring-5.jpg" alt="Men's Custom Tailoring Example 5">
-                            <div class="slide-caption">
-                                <h4>Men's Custom Tailoring</h4>
-                                <p>Elegant alterations for a refined look</p>
-                            </div>
-                        </div>
-
-                        <!-- Women's Tailoring Images -->
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-1.jpg" alt="Women's Custom Tailoring Example 1">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Bespoke designs for timeless style</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-2.jpg" alt="Women's Custom Tailoring Example 2">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Elegant custom dresses and formal wear</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-3.jpg" alt="Women's Custom Tailoring Example 3">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Perfect-fitting professional attire</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-6.jpg" alt="Women's Custom Tailoring Example 4">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Detailed craftsmanship for special occasions</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-8.jpg" alt="Women's Custom Tailoring Example 5">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Custom tailoring for the perfect silhouette</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-5.jpg" alt="Women's Custom Tailoring Example 6">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Exquisite details for special garments</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Women's Custom Tailoring">
-                            <img src="img/womens-tailoring/womens-tailoring-7.jpg" alt="Women's Custom Tailoring Example 7">
-                            <div class="slide-caption">
-                                <h4>Women's Custom Tailoring</h4>
-                                <p>Custom alterations for elegant attire</p>
-                            </div>
-                        </div>
-
-                        <!-- Trimming & Hemming Images -->
-                        <div class="carousel-slide" data-category="Trimming & Hemming">
-                            <img src="img/trimming-hemming/trimming-hemming-1.jpg" alt="Trimming and Hemming Service Example">
-                            <div class="slide-caption">
-                                <h4>Trimming & Hemming</h4>
-                                <p>Precise adjustments for the perfect length</p>
-                            </div>
-                        </div>
-
-                        <!-- Zipper & Button Images -->
-                        <div class="carousel-slide" data-category="Zipper & Button Installation">
-                            <img src="img/zipper-button/zipper-button-1.jpg" alt="Zipper and Button Installation Example 1">
-                            <div class="slide-caption">
-                                <h4>Zipper & Button Installation</h4>
-                                <p>Quality repairs and enhancements</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Zipper & Button Installation">
-                            <img src="img/zipper-button/zipper-button-2.jpg" alt="Zipper and Button Installation Example 2">
-                            <div class="slide-caption">
-                                <h4>Zipper & Button Installation</h4>
-                                <p>Professional replacement and repairs</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Zipper & Button Installation">
-                            <img src="img/zipper-button/zipper-button-3.jpg" alt="Zipper and Button Installation Example 3">
-                            <div class="slide-caption">
-                                <h4>Zipper & Button Installation</h4>
-                                <p>Meticulous attention to functional details</p>
-                            </div>
-                        </div>
-                        <div class="carousel-slide" data-category="Zipper & Button Installation">
-                            <img src="img/zipper-button/zipper-button-4.jpg" alt="Zipper and Button Installation Example 4">
-                            <div class="slide-caption">
-                                <h4>Zipper & Button Installation</h4>
-                                <p>Expert craftsmanship for lasting repairs</p>
-                            </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/trimming-hemming/IMG_1670.JPG" alt="Trimming & Hemming Work 3">
+                        <div class="portfolio-overlay">
+                            <h4>Detail Work</h4>
+                            <p>Careful attention to every edge</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="carousel-category-indicator">Garment Downsizing</div>
-                
-                <div class="carousel-navigation">
-                    <button class="carousel-prev" aria-label="Previous slide">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="carousel-next" aria-label="Next slide">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+            </div>
+
+            <!-- Women's Tailoring Portfolio -->
+            <div class="portfolio-category" id="womens-tailoring">
+                <h3>Women's Custom Tailoring</h3>
+                <p>Bespoke dresses and outfits tailored uniquely for your style</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/womens-tailoring/womens-tailoring-7.jpg" alt="Women's Tailoring Work 1">
+                        <div class="portfolio-overlay">
+                            <h4>Custom Dress</h4>
+                            <p>Elegant evening wear</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/womens-tailoring/womens-tailoring-6.jpg" alt="Women's Tailoring Work 2">
+                        <div class="portfolio-overlay">
+                            <h4>Professional Attire</h4>
+                            <p>Business formal tailoring</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/womens-tailoring/womens-tailoring-8.jpg" alt="Women's Tailoring Work 3">
+                        <div class="portfolio-overlay">
+                            <h4>Special Occasion</h4>
+                            <p>Custom formal wear</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/womens-tailoring/womens-tailoring-9.jpg" alt="Women's Tailoring Work 4">
+                        <div class="portfolio-overlay">
+                            <h4>Bridal Alterations</h4>
+                            <p>Perfect fit for your special day</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/womens-tailoring/womens-tailoring-10.jpg" alt="Women's Tailoring Work 5">
+                        <div class="portfolio-overlay">
+                            <h4>Casual Elegance</h4>
+                            <p>Everyday sophistication</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/womens-tailoring/womens-tailoring-5.jpg" alt="Women's Tailoring Work 6">
+                        <div class="portfolio-overlay">
+                            <h4>Detail Work</h4>
+                            <p>Intricate craftsmanship</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="carousel-indicators">
-                    <button class="indicator active" data-index="0" aria-label="Go to slide 1"></button>
-                    <button class="indicator" data-index="1" aria-label="Go to slide 2"></button>
-                    <button class="indicator" data-index="2" aria-label="Go to slide 3"></button>
-                    <button class="indicator" data-index="3" aria-label="Go to slide 4"></button>
-                    <button class="indicator" data-index="4" aria-label="Go to slide 5"></button>
-                    <button class="indicator" data-index="5" aria-label="Go to slide 6"></button>
-                    <button class="indicator" data-index="6" aria-label="Go to slide 7"></button>
-                    <button class="indicator" data-index="7" aria-label="Go to slide 8"></button>
-                    <button class="indicator" data-index="8" aria-label="Go to slide 9"></button>
-                    <button class="indicator" data-index="9" aria-label="Go to slide 10"></button>
-                    <button class="indicator" data-index="10" aria-label="Go to slide 11"></button>
-                    <button class="indicator" data-index="11" aria-label="Go to slide 12"></button>
-                    <button class="indicator" data-index="12" aria-label="Go to slide 13"></button>
-                    <button class="indicator" data-index="13" aria-label="Go to slide 14"></button>
-                    <button class="indicator" data-index="14" aria-label="Go to slide 15"></button>
-                    <button class="indicator" data-index="15" aria-label="Go to slide 16"></button>
-                    <button class="indicator" data-index="16" aria-label="Go to slide 17"></button>
-                    <button class="indicator" data-index="17" aria-label="Go to slide 18"></button>
-                    <button class="indicator" data-index="18" aria-label="Go to slide 19"></button>
-                    <button class="indicator" data-index="19" aria-label="Go to slide 20"></button>
+            </div>
+
+            <!-- Men's Tailoring Portfolio -->
+            <div class="portfolio-category" id="mens-tailoring">
+                <h3>Men's Custom Tailoring</h3>
+                <p>Perfectly tailored suits and casual wear designed exclusively for you</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/mens-tailoring/mens-tailoring-2.jpg" alt="Men's Tailoring Work 1">
+                        <div class="portfolio-overlay">
+                            <h4>Custom Suit</h4>
+                            <p>Bespoke formal wear</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/mens-tailoring/mens-tailoring-3.jpg" alt="Men's Tailoring Work 2">
+                        <div class="portfolio-overlay">
+                            <h4>Business Attire</h4>
+                            <p>Professional tailoring</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/mens-tailoring/mens-tailoring-1.jpg" alt="Men's Tailoring Work 3">
+                        <div class="portfolio-overlay">
+                            <h4>Formal Occasion</h4>
+                            <p>Special event tailoring</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/mens-tailoring/mens-tailoring-5.jpg" alt="Men's Tailoring Work 4">
+                        <div class="portfolio-overlay">
+                            <h4>Alterations</h4>
+                            <p>Perfect fit adjustments</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/mens-tailoring/mens-tailoring-4.jpg" alt="Men's Tailoring Work 5">
+                        <div class="portfolio-overlay">
+                            <h4>Casual Wear</h4>
+                            <p>Comfortable elegance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Downsizing Portfolio -->
+            <div class="portfolio-category" id="downsizing">
+                <h3>Garment Downsizing</h3>
+                <p>Expertly resizing your cherished garments to fit like new</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/downsizing/IMG_4187.PNG" alt="Downsizing Work 1">
+                        <div class="portfolio-overlay">
+                            <h4>Size Reduction</h4>
+                            <p>Professional resizing</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/downsizing/IMG_1673.JPG" alt="Downsizing Work 2">
+                        <div class="portfolio-overlay">
+                            <h4>Garment Alteration</h4>
+                            <p>Careful size adjustments</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/downsizing/bfa6d21d3fbf1780c43ebd3e65e4e012.jpg" alt="Downsizing Work 3">
+                        <div class="portfolio-overlay">
+                            <h4>Perfect Fit</h4>
+                            <p>Transformed to your size</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/downsizing/a0322233cf78d63ae52d4ce62d621d77.jpg" alt="Downsizing Work 4">
+                        <div class="portfolio-overlay">
+                            <h4>Before & After</h4>
+                            <p>Dramatic transformations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zipper & Button Portfolio -->
+            <div class="portfolio-category" id="zipper-button">
+                <h3>Zipper & Button Installation</h3>
+                <p>Quality repair and enhancements to restore your favorite clothing</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/zipper-button/zipper-button-4.JPG" alt="Zipper & Button Work 1">
+                        <div class="portfolio-overlay">
+                            <h4>Zipper Replacement</h4>
+                            <p>Quality hardware installation</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/zipper-button/zipper-button-2.jpg" alt="Zipper & Button Work 2">
+                        <div class="portfolio-overlay">
+                            <h4>Button Installation</h4>
+                            <p>Precise button placement</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/zipper-button/zipper-button-3.jpg" alt="Zipper & Button Work 3">
+                        <div class="portfolio-overlay">
+                            <h4>Hardware Repair</h4>
+                            <p>Professional repairs</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/zipper-button/zipper-button-1.jpg" alt="Zipper & Button Work 4">
+                        <div class="portfolio-overlay">
+                            <h4>Custom Details</h4>
+                            <p>Personalized touches</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="portfolio-social-links">
-            <p>See more of our tailoring work on social media</p>
-            <div class="social-buttons">
-                <a href="#" class="social-btn"><i class="fab fa-instagram"></i> @ElegantThreads</a>
-                <a href="#" class="social-btn"><i class="fab fa-tiktok"></i> @ElegantThreads</a>
-            </div>
-        </div>
+
+    <!-- Portfolio Carousel Section -->
     </section>
 
     <!-- Testimonials Section -->
