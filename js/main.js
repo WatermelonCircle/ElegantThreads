@@ -86,6 +86,13 @@ if (consultationForm) {
             return;
         }
         
+        // Check if form action is still placeholder
+        if (this.action.includes('YOUR_FORM_ID')) {
+            e.preventDefault();
+            alert('Form setup incomplete. Please follow the setup instructions in the HTML comments to get your Formspree form ID.');
+            return;
+        }
+        
         // If validation passes, let the form submit to Formspree
         // Show a loading message
         const submitBtn = this.querySelector('button[type="submit"]');
@@ -93,11 +100,8 @@ if (consultationForm) {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Re-enable button after a delay (in case of errors)
-        setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 5000);
+        // Note: The form will redirect to thank-you.html on success
+        // or show Formspree's default thank you page
     });
 }
 

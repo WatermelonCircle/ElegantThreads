@@ -298,7 +298,12 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="consultationForm" action="https://formspree.io/f/xdknonzb" method="POST">
+                    <!-- IMPORTANT: Replace YOUR_FORM_ID with your actual Formspree form ID -->
+                    <!-- To get a form ID: 1. Go to https://formspree.io/create -->
+                    <!-- 2. Enter elegantthread.wp@gmail.com as your email -->
+                    <!-- 3. Create account and get your unique form ID -->
+                    <!-- 4. Replace YOUR_FORM_ID below with your actual form ID -->
+                    <form id="consultationForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -315,20 +320,19 @@
                             <label for="service">Service Interested In</label>
                             <select id="service" name="service">
                                 <option value="">Select a Service</option>
-                                <option value="women">Women's Custom Tailoring</option>
-                                <option value="men">Men's Custom Tailoring</option>
-                                <option value="downsizing">Garment Downsizing</option>
-                                <option value="trimming">Trimming & Hemming</option>
-                                <option value="zipper">Zipper & Button Installation</option>
-                                <option value="other">Other</option>
+                                <option value="Women's Custom Tailoring">Women's Custom Tailoring</option>
+                                <option value="Men's Custom Tailoring">Men's Custom Tailoring</option>
+                                <option value="Garment Downsizing">Garment Downsizing</option>
+                                <option value="Trimming & Hemming">Trimming & Hemming</option>
+                                <option value="Zipper & Button Installation">Zipper & Button Installation</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Tell us about your tailoring needs</label>
                             <textarea id="message" name="message" rows="5"></textarea>
                         </div>
-                        <!-- Hidden field to specify the recipient email -->
-                        <input type="hidden" name="_replyto" value="elegantthread.wp@gmail.com">
+                        <!-- Hidden fields for Formspree -->
                         <input type="hidden" name="_subject" value="New Consultation Request from Elegant Thread Website">
                         <input type="hidden" name="_next" value="thank-you.html">
                         <button type="submit" class="btn btn-primary">Request Consultation</button>
