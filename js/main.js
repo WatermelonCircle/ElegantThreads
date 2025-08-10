@@ -76,21 +76,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const consultationForm = document.getElementById('consultationForm');
 if (consultationForm) {
     consultationForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Simple form validation
+        // Basic form validation
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         
         if (!name || !email) {
+            e.preventDefault();
             alert('Please fill in all required fields.');
             return;
         }
         
-        // Here you would typically send the form data to a server
-        // For now, just show a success message
-        alert('Thank you for your request! We will contact you shortly.');
-        this.reset();
+        // If validation passes, let the form submit to Formspree
+        // Show a loading message
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // Re-enable button after a delay (in case of errors)
+        setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }, 5000);
     });
 }
 

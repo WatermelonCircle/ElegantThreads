@@ -298,7 +298,7 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="consultationForm">
+                    <form id="consultationForm" action="https://formspree.io/f/xdknonzb" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -327,6 +327,10 @@
                             <label for="message">Tell us about your tailoring needs</label>
                             <textarea id="message" name="message" rows="5"></textarea>
                         </div>
+                        <!-- Hidden field to specify the recipient email -->
+                        <input type="hidden" name="_replyto" value="elegantthread.wp@gmail.com">
+                        <input type="hidden" name="_subject" value="New Consultation Request from Elegant Thread Website">
+                        <input type="hidden" name="_next" value="thank-you.html">
                         <button type="submit" class="btn btn-primary">Request Consultation</button>
                     </form>
                 </div>
